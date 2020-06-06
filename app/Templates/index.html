@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> Super Explorer </title>
+<head>
+  <link href="../static/main.css" rel="stylesheet">
+</head>
+  <body>
+
+  
+    <div class="container">
+      
+      <h1>SUMMARIZER</h1>
+      
+      <h2> This app is for generating summaries of long texts </h2>
+      
+      <h3>Only accepts txt files!</h3>
+      
+          <form action="{{url_for('success_table')}}" method="POST" enctype="multipart/form-data"> 
+      
+          <input type="file" accept=".csv" name="file" />
+      
+          <button type="submit"> Submit </button>
+      
+        </form>
+      
+      <div class="footer">
+        {{text|safe}}
+        {% include btn ignore missing %}
+      </div>
+
+      <div class="footer2">
+      </div>
+      
+  <div style="background-image: url('../static/14.jpg')">
+
+  </div>
+  </body>
+</html>
