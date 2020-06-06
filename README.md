@@ -4,9 +4,9 @@ This app was developed to identify best meaningful sentences in long documents t
 
 Dependencies:
 
-Numpy
-Networkx
-NLTK
-Flask
+* Numpy
+* Networkx
+* NLTK
+* Flask
 
 
